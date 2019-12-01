@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Погода</string>
+    <string name="humidity">Влажность</string>
+    <string name="cloudiness">Облачность</string>
     <string-array name="cityList">
         <item>Москва</item>
         <item>Санкт-Петербург</item>
