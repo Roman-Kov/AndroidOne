@@ -22,95 +22,20 @@
         android:id="@+id/cityEmblem"
         android:layout_width="150dp"
         android:layout_height="180dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/citySpinner"
         />
 
-    <TextView
-        android:id="@+id/date"
+    <Button
+        android:id="@+id/showWeatherButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_dark"
+        android:text="@string/show_weather"
+        android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cityEmblem"
-        tools:text="00.00.0000"
-        />
-
-    <TextView
-        android:id="@+id/cityTemperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="60sp"
-        android:textColor="@android:color/holo_blue_dark"
-        android:fontFamily="sans-serif-light"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date"
-        tools:text="00"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_marginStart="3dp"
-        android:text="C°"
-        android:fontFamily="sans-serif-light"
-        app:layout_constraintTop_toTopOf="@id/cityTemperature"
-        app:layout_constraintStart_toEndOf="@id/cityTemperature"
-        />
-
-    <CheckBox
-        android:id="@+id/humidity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/humidity"
-        app:layout_constraintTop_toBottomOf="@id/cityTemperature"
-        app:layout_constraintStart_toStartOf="parent"
-        android:checked="false"
-        />
-    <CheckBox
-        android:id="@+id/cloudiness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/cloudiness"
-        app:layout_constraintTop_toBottomOf="@id/humidity"
-        app:layout_constraintStart_toStartOf="parent"
-        android:checked="false"
-        />
-
-    <TextView
-        android:id="@+id/humidityValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_dark"
-        app:layout_constraintTop_toTopOf="@id/humidity"
-        app:layout_constraintStart_toEndOf="@id/humidity"
-        tools:text="Some text"
-        />
-
-    <TextView
-        android:id="@+id/cloudinessValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_dark"
-        app:layout_constraintTop_toTopOf="@id/cloudiness"
-        app:layout_constraintStart_toEndOf="@id/cloudiness"
-        tools:text="Some text"
-        />
+        app:layout_constraintTop_toBottomOf="@id/cityEmblem"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
