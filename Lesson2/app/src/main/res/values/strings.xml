@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="humidity">Влажность</string>
+    <string name="cloudiness">Облачность</string>
+    <string name="show_weather">Показать погоду</string>
+    <string name="show_yandex_weather">Показать погоду на Яндексе</string>
+    <string name="show_wiki">Показать статью на Wiki</string>
+    <string-array name="cityList">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Краснодар</item>
+        <item>Мурманск</item>
+    </string-array>
+</resources>
